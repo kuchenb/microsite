@@ -1,0 +1,48 @@
+:jbake-order: 1
+:jbake-title: 1. Steckbrief zum System
+
+[[section-system-profile]]
+== Steckbrief zum System
+
+ifndef::attributes-loaded[include::../_attributes.adoc[]]
+
+[.arc42help]
+****
+.Motivation
+Alle, die im Betrieb auf dieses IT System bzw. diese IT Services stoßen, etwa im Rahmen von IT Schnittstellen, Notfällen etc., erfahren hier, welche Funktion das System grob beinhaltet und wer es betreut.
+
+.Inhalt
+Kurzer Steckbrief, welche Funktion dieses IT-System beinhaltet und wer die Ansprechpartner sind.
+
+Die Repositories etwa in GitLab und Artifactory verlinken.
+
+Cloud Accounts bei AWS, Azure, bzw. bei einem PaaS-Provider für Produktion und Test verlinken.
+
+.Format
+Primär mit Verlinkung auf BEAM (beinhaltet die Funktion), Trafo-Monitor, EVI etc. arbeiten.
+
+Ggf. kann der Inhalt aus BEAM auch in dieses Dokument kopiert werden, weil ggf. nicht jeder Mitarbeiter Zugriff auf BEAM hat.
+****
+
+=== Beschreibung des Systems/der Services
+
+[cols="h,1"]
+|===
+|Name
+|<name>
+
+|BEAM ID
+|https://beam.noncd.rz.db.de/ExternalAccess.aspx?AccessType=WebMessage&Bookmark=66C298D7626D4416A47BC54121C35BE8[ICTO-8227]
+|===
+
+=== Beteiligte Teams
+
+* https://ttmon.smallsolutions.comp.db.de/f?p=125:202:8283911739382::NO:202:P202_ID:3558[Web Experience]
+
+=== Repositories
+
+
+=== Provider
+
+* Cloud Account Prod
+* Cloud Account Dev/Test

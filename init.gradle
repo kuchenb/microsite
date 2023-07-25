@@ -1,0 +1,17 @@
+allprojects {
+    buildscript {
+        repositories {
+            maven { url = "https://bahnhub.tech.rz.db.de/artifactory/gradle-plugins-remote" }
+            maven { url = "https://bahnhub.tech.rz.db.de/artifactory/Maven-Central-remote" }
+            maven { url = "https://bahnhub.tech.rz.db.de/artifactory/jcenter-remote" }
+            maven { url = "https://bahnhub.tech.rz.db.de/artifactory/kolt-maven-3rdparty" }
+        }
+    }
+    repositories {
+        maven { url = "https://bahnhub.tech.rz.db.de/artifactory/gradle-plugins-remote" }
+        maven { url = "https://bahnhub.tech.rz.db.de/artifactory/Maven-Central-remote" }
+        maven { url = "https://bahnhub.tech.rz.db.de/artifactory/jcenter-remote" }
+        maven { url = "https://bahnhub.tech.rz.db.de/artifactory/kolt-maven-3rdparty" }
+    }
+}
+println ">>> repository locations initialized via init.gradle"

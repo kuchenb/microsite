@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="210mm" height="297mm" version="1.1" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+    <cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Sascha Rübner-Dördelmann</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0,87)">
+  <g transform="matrix(.14525 0 0 .14525 170.74 -80.322)" fill="#ec0016">
+   <path class="cls-1" d="m90 0h-79.95a10 10 0 0 0-10.05 10v50a10.05 10.05 0 0 0 10.05 10h79.95a10.05 10.05 0 0 0 10-10.07v-49.93a10 10 0 0 0-10-10zm2.7 59.93a2.76 2.76 0 0 1-2.7 2.86h-79.95a2.76 2.76 0 0 1-2.75-2.86v-49.93a2.76 2.76 0 0 1 2.75-2.9h79.95a2.76 2.76 0 0 1 2.7 2.9z"/>
+   <path class="cls-1" d="m30.58 57.91h-16.82v-45.82h16.82c11.85 0 18.4 7.42 18.4 22.7 0.02 13.26-4.43 23.01-18.4 23.12zm7.31-22.17c0-9.23-1-16.44-10.9-16.44h-2.23v31.18h3.91c5.83 0 9.22-4.66 9.22-14.74z"/>
+   <path class="cls-1" d="m78 33.94a11.26 11.26 0 0 0 8-10.67c0-0.95-0.19-11.16-13.08-11.16h-19.12v45.8h16.2c4.29 0 17.66 0 17.66-12.88 0-3.22-1.32-9.28-9.66-11.09zm-13.3-14.77h3.46c4.93 0 6.89 1.72 6.89 5.52 0 3-2.16 5.54-6 5.54h-4.35zm4.51 31.31h-4.51v-11.77h4.81c5.71 0 7.11 3.33 7.11 5.89 0 5.88-5.62 5.88-7.41 5.88z"/>
+  </g>
+  <path d="m0.0027964-66.389 210.06 0.03167-0.0317 7.1562h-139.89v6.9979l-70.106-0.03167z" fill="#9ba0af" fill-opacity=".94118"/>
+  <g transform="translate(-18.881 125.6)" fill="#ec0016">
+   <path transform="matrix(.26458 0 0 .26458 0 -87)" d="m187.21 553.64a3.0339 2.8822 0 0 0-3.0332 2.8828 3.0339 2.8822 0 0 0 1.4121 2.4316v5.1309a1.7013 0.44028 0 0 0 1.7383 0.44922 1.7013 0.44028 0 0 0 1.7402-0.44922v-5.2852a3.0339 2.8822 0 0 0 1.1758-2.2773 3.0339 2.8822 0 0 0-3.0332-2.8828z" stroke-width=".17699"/>
+   <path transform="matrix(.26458 0 0 .26458 0 -87)" d="m173.28 546.76a3.4793 3.4793 0 0 0-3.4961 3.4785v17.396a3.4967 3.4967 0 0 0 3.4961 3.4785h27.816a3.4967 3.4967 0 0 0 3.4805-3.502v-17.373a3.4793 3.4793 0 0 0-3.4805-3.4785zm0.82617 3.4473a0.88554 0.88554 0 0 1 0.0156 0h25.652a0.88554 0.88554 0 0 1 0.86719 0.92969v16.02a0.88554 0.88554 0 0 1-0.86719 0.91797h-25.652a0.88554 0.88554 0 0 1-0.88086-0.91797v-16.02a0.88554 0.88554 0 0 1 0.86523-0.92969z" stroke-width=".34793"/>
+   <path d="m49.489 53.966c-2.1014 8.9e-5 -3.8049 1.6009-3.805 3.5757 6.97e-4 0.05089 0.0025 0.10146 0.0056 0.15229 0.01973-0.0013 0.0395-0.0025 0.05928-0.0025h0.86102c-0.0021-0.03695-0.0034-0.07375-0.0039-0.11069 9.2e-5 -1.498 1.2923-2.7124 2.8863-2.7124 1.5941-6.4e-5 2.8866 1.2143 2.8867 2.7124-1e-3 0.03695-0.0032 0.07383-0.0059 0.11069h0.73591c0.05928 3.05e-4 0.1184 0.0063 0.17653 0.018 0.0044-0.05596 0.0073-0.11195 0.0088-0.16801-1.21e-4 -1.9749-1.7038-3.5758-3.8053-3.5757z" fill-rule="evenodd" stroke-width=".18058"/>
+  </g>
+  <text x="37.17099" y="188.15234" fill="#ec0016" font-family="'DB Sans Black'" font-size="4.5861px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="37.17099" y="188.15234" fill="#ec0016" stroke-width=".26458">DB INTERN</tspan></text>
+ </g>
+</svg>

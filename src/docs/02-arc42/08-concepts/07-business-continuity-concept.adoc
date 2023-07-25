@@ -1,0 +1,33 @@
+:jbake-menu: -
+:jbake-type: page
+include::../config.adoc[]
+
+[[section-concepts-bc]]
+== Business Continuity Konzept
+
+[role="arc42help"]
+****
+.Motivation
+Bei der Konzeptionierung eines Systems sollte von Anfang an klar sein in wie weit man Geschäftsprozesse von der
+Verfügbarkeit des IT Systems abhängig macht, in wie weit die Abhängigkeit vermeidbar ist bzw. ob es einen Plan-B gibt,
+falls das System wider erwarten eines Tages nicht zur Verfügung steht.
+
+Zudem fordert die RRil 114.0206-04/05 ein Konzept für
+IT-Notfallvorsorge- und Bewältigungsmaßnahmen.
+
+.Inhalt
+
+TODO: Mit der Ausformulierung des BCM im Prozessteil ergänzen.
+
+.Form
+
+TODO: Mit der Ausformulierung des BCM im Prozessteil ergänzen.
+
+****
+
+// das Konzept kann hier hinterlegt werden oder direkt in im Business Continuity Management.
+
+Siehe
+xref:../../04-runbook/05-processes/07-business-continuity-management.adoc#section-processes-bcm[Runbook/Prozesse: Business Continuity Management]
+sowie
+xref:../../04-runbook/04-manuals/05-faulty-operation.adoc#section-manuals-faulty-operation[Runbook/Anleitungen: Störbetrieb]

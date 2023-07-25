@@ -1,0 +1,39 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-deployment-view]]
+= Deployment-Sicht
+
+[role="arc42help"]
+****
+.Motivation
+Die wichtigste Architektursicht für den Betreiber, um den technischen Aufbau zu verstehen und Fehler lokalisieren zu können. 
+
+.Inhalt
+Die Deployment-Sicht beschreibt:
+
+* genutzte Infrastruktur- und Plattformservices
+* Compute Nodes inklusive
+** Laufzeitverhalten (etwa Online-TX-Systeme, Analyseprozesse, Batch-Prozesse bzw. Jobsysteme inklusive Trigger)
+** Konfigurationseinstellungen
+** Testmöglichkeiten
+* Storage Nodes (Datenbanken, Messaging-Hub etc.)
+** Produkte
+** Konfigurationen
+* Netzwerkverbindungen zwischen den Nodes
+** Protokolle und ggf. Ports
+** Authentifizierung/Autorisierung/Auditing
+** bei ausgehenden Verbindungen zusätzlich:
+*** Ansprechpartner auf Gegenseite
+*** Übertragungsweg und beteiligte Accounts
+*** Schnittstellenvereinbarungen
+*** Datenmenge und ggf. Übertragungsintervall
+* die Zuordnung der Bausteine (siehe vorherigen Abschnitt) zu den Nodes dieser Infrastruktur
+* die verschiedenen Umgebungen (Entwicklung-/Test- oder Produktionsumgebungen), die dauerhaft oder temporär aufgebaut werden
+
+.Form
+Diagramm etwa erstellt als
+* grafische Darstellung etwa mit Visio oder Draw.io,
+* UML-Darstellung etwa mit Enterprise Architect oder PlantUML.
+****

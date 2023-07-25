@@ -1,0 +1,25 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-architecture-constraints]]
+= Anforderungen und Randbedingungen
+
+:url-1: https://dbsw.sharepoint.com/teams/Architekturgilde/Lists/Architekturprinzipien/AllItems.aspx?viewid=55e8e4c0%2D3fb7%2D436f%2D9d2b%2Dc9083f5903e4
+
+[role="arc42help"]
+****
+.Motivation
+Das Verständnis für die wichtigen fachlichen Anforderungen, die Qualitätsanforderungen und Randbedingungen sind wichtig, um die richtigen Prioritäten im Betrieb und vor allem bei Störungen zu ziehen.
+
+.Inhalt
+Anforderungen sowie Rahmenbedingungen
+
+* Sicherheitsanforderungen lt. 114.0247-05-07 hier berücksichtigen
+* essenzielle fachliche Anforderungen an das System
+* Qualitätsziele für die Architektur
+* wichtige Einschränkungen und Randbedingungen
+
+.Form
+Einfache Tabellen der Anforderungen mit kurzen Erläuterungen.
+****

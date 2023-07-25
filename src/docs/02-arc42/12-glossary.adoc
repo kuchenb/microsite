@@ -1,0 +1,51 @@
+:jbake-title: 12. Glossar
+:jbake-type: page_toc
+:jbake-status: published
+:jbake-menu: arc42
+:jbake-order: 12
+:filename: /12_glossary.adoc
+ifndef::imagesdir[:imagesdir: ../../images]
+
+:toc:
+
+[[section-glossary]]
+== Glossar
+
+[role="arc42help"]
+****
+.Inhalt
+Die wesentlichen fachlichen und technischen Begriffe, die Stakeholder im Zusammenhang mit dem System verwenden.
+
+Nutzen Sie das Glossar ebenfalls als Übersetzungsreferenz, falls Sie in mehrsprachigen Teams arbeiten.
+
+.Motivation
+Sie sollten relevante Begriffe klar definieren, so dass alle Beteiligten
+
+* diese Begriffe identisch verstehen, und
+* vermeiden, mehrere Begriffe für die gleiche Sache zu haben.
+
+.Form
+* Zweispaltige Tabelle mit <Begriff> und <Definition>
+* Eventuell weitere Spalten mit Übersetzungen, falls notwendig.
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-12/[Glossar] in der online-Dokumentation (auf Englisch!).
+
+.Hinweis für link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/das-service-1x1[digitale Services]
+Das Glossar entspricht der link:https://servitization.gitpages.tech.rz.db.de/02_DDD/04_glossar.html#_ubiquitious_language[Ubiquitious Language aus DDD]. Wichtig ist daher, dass die Begriffe widerspruchsfrei definiert werden. Das Glossar geht über die technische Architektur hinaus.
+
+****
+
+Siehe auch das allgemeine https://dbsystel.wiki.intranet.deutschebahn.com/wiki/display/glossar[Glossar der DB-Systel].g
+
+[cols="1,2" options="header"]
+|===
+|Begriff |Definition
+
+|<Begriff-1>
+|<Definition-1>
+
+|<Begriff-2
+|<Definition-2>
+|===

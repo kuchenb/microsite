@@ -1,0 +1,28 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-building-block-view]]
+= Bausteinsicht
+
+[role="arc42help"]
+****
+.Motivation
+Die logische Komponentensicht hilft die Arbeitsweise des Systems und damit u. a. Fehlermeldungen, Logs und Metriken des Systems zu verstehen.
+In der Analogie zum Hausbau bildet die Bausteinsicht den _Grundrissplan_.
+
+.Inhalt
+Diese Sicht zeigt die statische Zerlegung des Systems in Bausteine sowie deren _Abhängigkeiten_. Beispiele für Bausteine sind
+
+* Komponenten, Module, Subsysteme, Bibliotheken
+* logisches Datenmodell, Datenspeicher (Repositories)
+* Interfaces
+* Frameworks
+* Schichten, Partitionen
+
+.Form
+Diagramm inkl. Relationen
+
+Bei Bedarf kann die Darstellung hierarchisch über mehrere Ebenen erfolgen. Dabei kann das https://c4model.com/[C4-Modell] als Inspiration dienen.
+****
+

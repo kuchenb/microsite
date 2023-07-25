@@ -1,0 +1,12 @@
+:jbake-title: About
+:jbake-type: page
+:jbake-status: published
+:jbake-menu: About
+
+:imagesdir: /images
+
+
+include::../02-arc42/about-arc42.adoc[]
+
+'''
+

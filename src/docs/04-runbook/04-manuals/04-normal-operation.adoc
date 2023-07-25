@@ -1,0 +1,49 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]]
+
+[[section-manuals-normal-operation]]
+= Regelbetrieb
+
+[.arc42help]
+****
+.Motivation
+Dieser Abschnitt enthält die Handlungsanweisungen für alle manuellen Tätigkeiten, die im Regelbetrieb regelmäßig
+anfallen.
+
+.Inhalt
+
+* Anfragen bedienen (Service Requests)
++
+Dieses Kapitel enthält die möglichen Anfragen an das Team für Tasks, die nicht im Self-Service verfügbar sind.
+
+* Regelmäßige Aufgaben
++
+Regelmäßige Prüfung, ob nicht mehr benötigte Ressourcen aufzuräumen sind, ob Engpässe bei Ressourcen drohen, ob die
+Notfallpläne noch stimmen, etc.
+
+** Aufräumarbeiten (monatlich)
+** Trendanalysen und Kapazitätsplanung
+** Notfallpläne testen (jährlich)
+** …
+
+.Format
+Kurze Auflistung
+
+.Quelle
+Ggf. kann hier auch direkt auf Request-Management-Systeme verwiesen werden. Im Idealfall sind dort die
+möglichen Arten der Requests auch erklärt.
+
+****
+== Anfragen bedienen (Service Requests)
+=== <Service Request 1>
+=== <Service Request 2>
+=== ...
+
+
+== Regelmäßige Aufgaben
+
+=== <Aufgabe 1> (Zeitpunkte oder Intervall)
+=== <Aufgabe 2> (Zeitpunkte oder Intervall)
+=== ...
+

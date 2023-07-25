@@ -1,0 +1,50 @@
+// common asciidoc settings
+// ========================
+// Include config in all documents at the beginning by
+// include::../_attributes.adoc[]
+
+// switch styles off if it leads to problems
+:suppress-arc42-styles: true
+
+// asciidoc settings for DE (German)
+// ==================================
+// icons for admonitions
+
+:icons: font
+:caution-caption: Achtung
+:important-caption: Wichtig
+:note-caption: Hinweis
+:tip-caption: Tip
+:warning-caption: Warnung
+:appendix-caption: Anhang
+:example-caption: Beispiel
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:lang: de
+
+// common URLs
+:dbs-git: https://git.tech.rz.db.de
+
+// project specific variables
+// put your gitlab doc URI here
+:project-repo-group: {dbs-git}/docs-as-code
+:project-repo-doc: {project-repo-group}/techdoc-templates
+:company: DB Systel
+:systemname: <SYSTEMNAME>
+:site_title: Dokumentation zu {systemname}
+
+// imagesdir has to be set as it is used for calculating paths to subdirectory before include directives with documents in a subdirectory
+
+ifndef::imagesdir[:imagesdir: .]
+
+:topdir:
+
+:attributes-loaded: true
+
+// Add kroki to render all diagrams
+
+//kroki server doesn't currently work for pdf
+ifeval::["{backend}" != "pdf"]
+:diagram-server-url: https://kroki.default.prd.swd-gitlab.mop.comp.db.de
+:diagram-server-type: kroki_io
+endif::[]

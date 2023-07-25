@@ -1,0 +1,46 @@
+:jbake-title: 5. Prozesse
+
+ifndef::attributes-loaded[include::../_attributes.adoc[]]
+[[section-processes]]
+== Prozesse
+
+[role="arc42help"]
+****
+.Motivation
+Eine hohe Verfügbarkeit von IT Services lässt sich nur durch entsprechende Prozesse erreichen. Über diese sollte sich
+jedes Teammitglied bewusst sein, daher ist es wichtig, diese zu dokumentieren. Nicht zuletzt ist die
+Prozessdokumentation Grundlage für ISO-Audits.
+
+.Inhalt
+Die folgenden Prozesse sollten entsprechend den Verfügbarkeitsanforderungen angemessen beschrieben sein:
+
+image::00-processes.service-reliability.drawio.svg[width=70%, scalewidth=12cm]
+
+.Form
+Überwiegend Prozessbeschreibung in Form von Tabellen, optional auch grafisch.
+
+****
+
+:folder: 05-processes
+
+<<<
+include::{folder}/01-configuration-management.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/02-event-management.adoc[leveloffset=+1]
+
+
+<<<
+include::{folder}/03-incident-and-problem-management.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/04-release-and-change-management.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/05-capacity-management.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/06-service-level-management.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/07-business-continuity-management.adoc[leveloffset=+1]

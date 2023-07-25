@@ -1,0 +1,54 @@
+:jbake-title: 3. Konzepte
+
+ifndef::attributes-loaded[include::../_attributes.adoc[]]]
+
+[[section-concepts]]
+== Konzepte
+
+[role="arc42help"]
+****
+.Motivation
+Hier besteht die Möglichkeit wichtige Konzepte für den Betrieb zu erläutern. 
+Zudem fordert die RRil 114.02 zur IT-Security bestimmte Konzepte zu dokumentieren. Hier ist der Platz diese abzulegen
+bzw. darauf zu verweisen.
+
+.Inhalt
+In diesem Dokument sind bereits betrieblich relevante Konzepte aus der Architekturbeschreibung verlinkt.
+Du kannst die Dokumente/Templates auch in dieses Verzeichnis kopieren und für betriebliche Belange anpassen.
+Ggf. gibt es weitere Konzepte, die für
+den Betrieb relevant sind, ggf. können auch welche von den hier vorgeschlagenen Konzepten entfallen, falls sie für das
+System nicht relevant sind.
+
+.Form
+Kann vielfältig sein:
+
+* Verweis auf Teile der Architekturbeschreibung, falls sich diese im gleichen Repository befindet
+* Kurzbeschreibung in diesem Indexdokument
+* ausgelagertes Konzeptpapiere mit beliebiger Gliederung
+* Verweis auf Anleitungen oder Prozesse, in denen die Konzepte bereits beschrieben sind
+
+****
+
+:concepts-dir: ../02-arc42/08-concepts
+
+<<<
+
+include::{concepts-dir}/01-security-concept.adoc[leveloffset=+1]
+
+<<<
+include::{concepts-dir}/02-user-concept.adoc[leveloffset=+1]
+
+<<<
+include::{concepts-dir}/03-test-concept.adoc[leveloffset=+1]
+
+<<<
+include::{concepts-dir}/04-patching-concept.adoc[leveloffset=+1]
+
+<<<
+include::{concepts-dir}/05-monitoring-concept.adoc[leveloffset=+1]
+
+<<<
+include::{concepts-dir}/06-backup-and-recovery-concept.adoc[leveloffset=+1]
+
+<<<
+include::{concepts-dir}/07-business-continuity-concept.adoc[leveloffset=+1]

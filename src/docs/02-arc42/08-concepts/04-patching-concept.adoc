@@ -1,0 +1,47 @@
+:jbake-menu: -
+:jbake-type: page
+include::../config.adoc[]
+
+[[section-concepts-patching]]
+== Patching-Konzept
+
+[role="arc42help"]
+****
+.Motivation
+Laut RRil 114.0240-05-23 muss der Betreiber ein Patchkonzept vorweisen. Es empfiehlt sich auch dieses Konzept mit dem
+Auftraggeber zu vereinbaren, da ein Patch auch immer ein Verfügbarkeitsrisiko darstellt und der Auftraggeber nicht
+überrascht ein sollte, falls das Einspielen eines Patches zu Problemen führt.
+
+.Inhalt
+Mögliche Inhalte:
+
+* Für welche Anteile der Infrastruktur ist das Team selbst für das Patchen verantwortlich bzw. bei welchen genutzten
+Plattform-Services ist das im Leistungsumfang des Providers?
+* Lieferwege für Patches
+* Trigger für das Patchen (chron oder Reaktion auf neue Versionen) sowie zeitliche Constraints für das Patchen
+* Verweis auf
+xref:../../04-runbook/05-processes.adoc#section-processes-relm[Runbook/Prozesse: Release und Change Management] für das Patchen.
+Dort oder hier sollten folgende Punkte beantwortet sein:
+  ** wer gibt Patches frei, bzw. werden sie überhaupt freigegeben?
+  ** Welche Tests werden durchlaufen?
+  ** In welcher Reihenfolge erfolgen die Patches?
+
+.Form
+Kurz und knapp ggf. in Form einer Tabelle, etwa
+
+[cols="h,1,2,2"]
+|===
+h| Name des Nodes
+h| Repository
+h| Zeitpunkt
+h| Tests
+
+| AppServer
+| registry-access-redhat-remote.bahnhub.tech.rz.db.de
+| täglich, falls neues Image für Minor-Version vorliegt
+| Automatisierte Black-Box-Tests, Shake-down-Tests
+
+|===
+
+****
+

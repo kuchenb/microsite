@@ -1,0 +1,25 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-system-scope-and-context]]
+= Systemabgrenzung und -kontext
+
+[role="arc42help"]
+****
+.Motivation
+Die fachlichen und technischen Schnittstellen des Systems sind kritisch für den Betrieb des Systems.
+
+.Inhalt
+
+* Festlegung *aller* Kommunikationsbeziehungen (Nutzer, IT-Systeme, …)
+* Erklärung der fachlichen Ein- und Ausgabedaten (Datenfluss)
+* Zusätzlich (bei Bedarf) fachliche Datenformate oder Protokolle der Kommunikation mit den Nachbarsystemen.
+
+.Form
+Verschiedene Optionen, ggf. auch in Kombination:
+
+* Kontextdiagramm
+* Listen von Kommunikationsbeziehungen mit deren Schnittstellen
+* Verlinkung von Schnittstellendokumenten
+****

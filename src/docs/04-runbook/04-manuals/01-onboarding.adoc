@@ -1,0 +1,33 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]]
+
+[[section-manuals-onboarding]]
+= Onboarding
+
+[.arc42help]
+****
+.Motivation
+Anhand dieser Dokumentation kann ich als Teammitglied alle Werkzeuge und Hilfsmittel installieren, die ich für die
+Administration der
+Anwendung brauche.
+
+.Inhalt
+
+Sammlung der wichtigsten Ablageplätze und Webseiten.
+
+Für die Werkzeuge, die noch nicht in spezifischen Kapiteln (ausreichend) beschrieben sind:
+
+* Installationsanleitungen
+* Bedienungsanleitungen
+
+.Format
+Kurze Liste mit Links zu den Herstellerseiten oder Download-URLs. Beschreibung nur dort, wo es Spezielles zu beachten
+gibt.
+
+.Quelle
+Ggf. stehen die Entwicklungswerkzeuge bereits in einem anderen Dokument, auf das hier verwiesen werden kann oder
+das hier eingefügt werden kann.
+Viele Werkzeuge sind ja meistens auf den Herstellerseiten schon ausreichend beschrieben.
+
+****

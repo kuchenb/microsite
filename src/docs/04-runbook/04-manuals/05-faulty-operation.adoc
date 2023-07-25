@@ -1,0 +1,63 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]]
+
+[[section-manuals-faulty-operation]]
+
+= Störbetrieb
+
+[.arc42help]
+****
+.Motivation
+Dieses Kapitel ist der zentrale Einstiegspunkt für den Tagesdienst oder die Rufbereitschaft um eine Störung zu beheben.
+
+.Inhalt
+Hier stehen die Handlungsanweisungen für die manuelle Wiederherstellung des Regelbetriebs im Störfall.
+
+Für die Behebung von Störungen ist es wichtig, bekannte Fehler und entsprechende Workarounds
+zu kennen. Die bekannten Fehler befinden sich ggf. auch in https://itsm.noncd.rz.db.de/index.do[ITSM] (Tool für IT Service Management), dann genügt hier ein Link dorthin.
+
+Für die Ursachenfindung kann ansonsten die Beschreibung von Analysewerkzeuge und -vorgehen
+helfen.
+
+Manche Störungen können auch potenziell wiederkehren, etwa vollgelaufener Storage oder Überlast. Für solche Störungen
+sollten hier Rezepte hinterlegt werden, ggf. auch Workarounds und temporäre Maßnahmen.
+
+Entweder hier oder unter
+xref:../../02-arc42/08-concepts.adoc#section-concepts-backup-recovery[Architektur/Konzepte: Datensicherungs- und Wiederherstellungskonzept] sowie
+xref:../../02-arc42/08-concepts.adoc#section-concepts-bc[Architektur/Konzepte: Business Continuity Konzept]
+sollte zur Erfüllung der RRil 114.0240-05-36/38 und RRil 114.0206-04/05 das konzeptionelle Vorgehen
+beschrieben sein.
+
+Hier oder unter
+xref:../../04-runbook/05-processes/07-business-continuity-management.adoc#section-processes-bcm[Prozesse: Business Continuity Management]
+sollten auch die Prozessvorgaben lt. Process-Library berücksichtigt sein.
+
+.Format
+Alle anderen Inhalte kurz und knapp in Form von Checklisten beschreiben.
+
+.Quelle
+Bekannte Fehler sollten besser in einem Problem-Management-Tool (https://itsm.noncd.rz.db.de/index.do[ITSM]) gepflegt sein. Dann reicht hier ein Hinweis.
+Für Analysen und Anleitung zur Störungsbeseitigung ist hier die zentrale Ablage.
+
+****
+
+== Bekannte Fehler und Workarounds
+=== <Fehler 1>
+
+== Analysen
+=== <Analyse von X1>
+=== <Analyse von X2>
+=== ...
+
+== Störungen und deren Behebung
+=== <Störung 1>
+=== ...
+
+
+== Notfallpläne und Wiederherstellung (Recovery)
+
+Die Notfallpläne stehen unter
+xref:../../04-runbook/05-processes/07-business-continuity-management.adoc#section-processes-bcm[Prozesse: Business Continuity Management].
+
+

@@ -1,0 +1,198 @@
+= Schnittstellenbeschreibung <API NN>
+:revnumber: 0.1
+:revdate: 2020-00-00
+:author: <AUTOR>
+
+ifndef::attributes-loaded[include::../_attributes.adoc[]]]
+//include::../shared/_header.adoc[]
+
+[role="arc42help"]
+****
+Diese Vorlage enthält Hilfe und Erklärungen.  Lösche Notizen und Absätze, die mit
+`role=bb-help` sind.
+****
+
+== Einleitung
+
+[role="arc42help"]
+****
+Kurze Zusammenfassung des Inhalts des Dokuments und Kurzbeschreibung der Schnittstelle. Ggf. auf die
+fachliche Schnittstellenbeschreibung verweisen, falls noch die klassische Trennung
+fachliche/technische Beschreibung erfolgt.
+****
+
+=== Zielgruppe
+
+Diese Schnittstellenbeschreibung richtet sich an Architekten und Entwickler, sowohl von der
+anbietenden Seite als auch von der konsumierenden Seite.
+Sie wird als bindend beim technischen Design und der Umsetzung berücksichtigt.
+
+Da das Dokument auch betriebliche Belange berührt, ist es auch für Betriebsführer von Interesse.
+
+[role="arc42help"]
+****
+Dieses Dokument sollte nur solche Informationen enthalten, die für mehrere der beteiligten Systeme
+relevant sind.
+****
+
+=== Zweck
+
+[role="arc42help"]
+****
+Dieser Abschnitt gibt einen kurzen Überblick über folgende Themen:
+
+* die Art der Schnittstelle,
+* die geplante technische Umsetzung.
+
+Im einfachsten Fall existieren ein anbietendes und ein konsumierendes
+System. Es können aber auch mehrere anbietende und konsumierende Systeme
+beteiligt sein.
+
+*Allgemeine Anforderungen*
+
+Die technische Schnittstellenbeschreibung soll so ausführlich formuliert sein, dass gegen sie
+implementiert werden kann. Das heißt: Alle notwendigen Spezifikationen sind vollständig
+enthalten. Dies betrifft insbesondere die Spezifikation von Datenpaketen oder komplexen
+Datentypen. Der diesbezügliche Abschnitt muss individuell gestaltet werden. Nicht enthalten sind
+verfahrensspezifische Umsetzungsdetails.
+****
+
+=== Mitgeltende Dokumente
+
+== Nichtfunktionale Aspekte
+
+[role="arc42help"]
+****
+In diesem Kapitel werden die Auswirkungen von nicht funktionalen Anforderungen auf technische
+Gesichtspunkte der Schnittstellenspezifikation behandelt. Insbesondere wird nachvollziehbar
+dokumentiert, welche Anforderungen das technische Design der Schnittstelle maßgeblich prägen.
+****
+
+== Schnittstellenspezifikation
+
+In diesem Abschnitt wird die technische Umsetzung der Schnittstelle beschrieben.
+
+=== Statische Sicht der Schnittstellennutzung
+
+In diesem Abschnitt wird die Struktur der Schnittstelle beschrieben, also deren Art, die beteiligten
+Systeme, das technische Datenmodell, technische Mengengerüste, usw.
+
+[role="arc42help"]
+****
+* Art der Schnittstelle
+* Komponentendiagramm, mit Darstellung der beteiligten Systeme und verwendeten Schnittstelle.
+
+Dieser Abschnitt wird je nach Schnittstellenart unterschiedlich ausgefüllt. Falls die Schnittstelle
+mittels https://www.openapis.org[OpenAPI] oder https://www.asyncapi.com[AsyncAPI] dokumentiert wird,
+sollte hier darauf verwiesen werden. In diesem Dokument sollte dann nur noch das stehen, was dort
+keinen Platz gefunden hat.
+
+.Datenaustauschschnittstelle
+
+Bei dieser Schnittstelle steht der Austausch von Daten im Vordergrund.  Die Daten können z.B. durch
+eine Datei oder Nachricht übertragen werden.
+
+Es gibt viele mögliche Dateitypen und Austauschformate. Gängig sind sowohl Text als auch
+Binärformate, manche sind generisch, manche standardisiert. Der jeweilige Typ sollte begründet
+werden. Bei generischen Formaten muss das Format im Detail genauer beschrieben werden.
+
+Beispiele:
+
+* Flatfiles: Struktur, Formate, Wertebereiche.
+* XML-File: Struktur, Formate (bei Bedarf, ggf. Stylesheet), Wertebereiche
+* Nachrichten: Struktur, Formate, Wertebereiche. (Nachrichten; Datagramme o.ä. können als flache
+Struktur (String) oder auch als XML auftreten)
+
+Die Dokumentation kann durch Klassendiagramme unterstützt werden, wenn komplexere Datenstrukturen
+ausgetauscht werden sollen. Die Dokumentation der Serialisierung erfolgt durch Backus-Naur Form.
+
+Das Marshalling bzw. Demarshalling wird bei der Beschreibung der beteiligten Systeme vorgenommen.
+
+.Aufrufschnittstelle
+
+Aufgerufen wird eine Methode oder Funktionalität eines Softwaresystems (Schnittstellenanbieter).
+
+Die Dokumentation der technischen Schnittstellensignatur kann als Tabelle erfolgen:
+
+[cols=",,,,",options="header",]
+|=======================================================================
+|Nr. |Name der Funktion |Übergabeparameter |Rückgabeparameter|Beschreibung
+| | | | |
+|=======================================================================
+
+Alternativ bietet es sich bei Aufrufschnittstellen an, die aufzurufenden Methoden in einem
+Klassendiagramm darzustellen, das die Schnittstellenklasse(n) mit den Methoden und deren Signaturen
+zeigt. Das Diagramm muss auch die Fehlernachrichten enthalten, wenn die Angabe auf Klassenebene
+sinnvoll ist (sonst auf Methodenebene). Auch wenn die Programmiersprache keine Klassen vorsieht
+(etwa RFC), können die aufzurufenden Funktionen als UML-Interface dargestellt werden.
+****
+
+=== Dynamische Sicht der Schnittstellennutzung
+
+[role="arc42help"]
+****
+
+Im Allgemeinen unterliegt die Schnittstellennutzung einem Kommunikationsprotokoll, an welches sich
+Schnittstellenanbieter und -nutzer halten müssen. Dies wird hier beschrieben. Die Beschreibung muss
+dabei mindestens auf folgende Aspekte eingehen, sofern zutreffend:
+
+* Ausnahme- und Fehlerbehandlung (inkl. Recovery bei schreibenden Transaktionen).
+* Übertragungsart: synchron/asynchron und Rücksendung von Empfangsquittungen. Falls die
+Übertragungsmuster in der fachlichen Schnittstellenbeschreibung noch Interpretationsspielraum
+zulassen, sollten die dynamischen Aspekte hier weitgehend vollständig und unmissverständlich
+beschrieben sein.
+* Sessionmanagement
+
+* Logging/Protokollierung (sofern dies z.B. aufgrund der Notwendigkeit eines übergreifenden
+Monitoring oder auf der Grundlage nichtfunktionaler Anforderungen bzgl. Nachvollziehbarkeit oder
+Aufbewahrung von Nachrichten notwendig ist).
+
+Unterliegt die Benutzung der Schnittstelle einem Protokoll bzw. einem Kontext, kann zur
+Dokumentation ein Sequenzdiagramm verwendet werden um den dynamischen Aspekt der
+Schnittstellennutzung zu beschreiben. Die beteiligten (Sub-) Systeme sind Akteure. Die Nachrichten
+entsprechen der Schnittstellenbenutzung, d.h. entweder der genauen Aufrufsignatur einer
+Schnittstellenfunktion oder dem Datenpaket (z.B. Datei), welches übermittelt wird. Da ein Protokoll
+verschiedene Ablaufszenarien haben kann, wird für jedes Szenario ein Sequenzdiagramm vorgesehen,
+welches den zeitlichen Ablauf beschreibt.
+
+Zwischen nutzendem und anbietendem System ist oft eine Middleware dazwischengeschaltet. In solchen
+Fällen sollte nicht die Middleware als Partnersystem dargestellt werden sondern die beteiligten
+Anwendungen, die fachliche Services nutzen oder bereitstellen. Dabei reicht es ggf. aus, die
+Middleware sowohl im Kontextdiagramm als auch in der dynamischen Sicht nur anzudeuten. Letztendlich
+muss sich die Darstellung hier aber an den im Projekt bzw. Projektumfeld angewendeten
+Darstellungskonventionen orientieren.
+
+Ergänzend können Aktivitäts- oder Zustandsdiagramm zur Dokumentation dynamische Aspekte genutzt
+werden. Der Fokus liegt dabei in der internen Betrachtung der Systeme, d.h. die internen
+Verarbeitung im Vorfeld bzw.  der weiteren Verarbeitung nach der Schnittstellennutzung. Die
+Herausforderung ist hierbei, sich auf Aspekte zu beschränken, die auch für die Schnittstellenpartner
+von Interesse sind. Insbesondere berücksichtigen Aktivitätsdiagramme die Fehlererkennung und
+–behandlung.  Die beteiligten Systeme, oder genauer deren Softwarekomponenten bzw.  Klassen, sind
+Akteure, für die Partitionen angelegt werden können.  Aufrufe bzw. Datenpakete kreuzen die
+Partitionen. Zur Verdeutlichung legt man Datenpakete auf der Grenze zwischen zwei Partitionen
+ab. Die Aktivitäten im Diagramm sind auf detailliertem Niveau, ähnlich wie Softwarequellcode.
+****
+
+== Offene Punkte
+
+== Anhänge
+
+.Dokumenthistorie
+[options="header",cols="1,1,1,2,5"]
+|===
+|Version |Datum   |Status | Autor    |Beschreibung
+
+|{revnumber}
+|{revdate}
+|iA
+|{author}
+|Initiale Version
+
+|===
+
+----
+Mögliche Status: iA (in Arbeit)
+                 fertig
+----
+
+- [[[BEISPIEL]]] DB Systel, "FIXME"

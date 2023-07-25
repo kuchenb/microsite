@@ -1,0 +1,44 @@
+// toc-title definition MUST follow document title without blank line!
+:jbake-menu: -
+:jbake-type: page
+:toc-title: Inhaltsverzeichnis
+:toc:
+:doctype: book
+:pdf-themesdir: ../pdfTheme
+:pdf-theme: custom
+:pdf-fontsdir: ../pdfTheme;GEM_FONTS_DIR
+
+:imagesdir: .
+include::../_attributes.adoc[]
+
+== Runbook
+
+// following variable is required for including documents in subdirectories. 
+// The variable is named like this document so that 
+// it is not modified in included documents
+:runbook-imagesdir: {imagesdir}
+
+'''
+
+// numbering from here on
+:numbered:
+
+<<<
+include::01-system-profile.adoc[leveloffset=+1]
+
+<<<
+:imagesdir: {imagesdir}/02-arc42-overview
+include::02-architecture-overview.adoc[leveloffset=+1]
+
+<<<
+:imagesdir: {runbook-imagesdir}/03-concepts
+include::03-concepts.adoc[leveloffset=+1]
+
+<<<
+:imagesdir: {runbook-imagesdir}/04-manuals
+include::04-manuals.adoc[leveloffset=+1]
+
+<<<
+:imagesdir: {runbook-imagesdir}/05-processes
+include::05-processes.adoc[leveloffset=+1]
+

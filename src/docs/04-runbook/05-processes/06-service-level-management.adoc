@@ -1,0 +1,72 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-processes-slm]]
+= Service Level Management (SLM)
+
+[.arc42help]
+****
+.Motivation
+Aus diesem Abschnitt kann ein Betriebsmitarbeiter ablesen, welche Service Level Vereinbarungen existieren,
+auf welchen Services und Service Levels das System aufbaut und wann es zu einer Verletzung eines Service
+Levels kommt.
+
+.Inhalt
+Alle die Anwendung (->link:[Glossar]) betreffenden Informationen zum SLM der Lieferanten.
+* Welche Lieferanten haben welche Verträge und müssen somit welche SL liefern?
+* Wie kann ich den Status der Systeme abfragen?
+* Was sind die Supportkanäle?
+* Wie kann ich ein Ticket eröffnen (was muss ich dabei beachten)?
+
+* eigener, zu erbringender Service-Level
+** Genaue Schwellwerte beschreiben bzw. auf das SLA-Dokument im Vertrag mit dem Kunden verweisen
+** Textuell beschreiben, welches die kritischen Anforderungen oder besser Szenarien für die Verfügbarkeit des Systems sind bzw. auf diese verweisen. Dabei soll hervorgehen, welche Nutzer und Partnersysteme wie betroffen sind.
+** Verweis auf das SLA-Monitoring unter xref:04-manuals.adoc#section-manuals-monitoring[Anleitungen: Monitoring] hinzufügen.
+
+* Informationen zu Lieferanten  (aufgegliedert nach intern/extern). Folgende Aspekte solltet ihr potenziell dokumentieren:
+** Verträge
+*** Leistungsumfang, ggf. auch Abgrenzung im Sinne von Shared Responsibility
+*** Service-Level-Agreement (SLA) mit Lieferant 
+*** Anforderungsmanagement (und ggf. die Möglichkeit Änderungen einzubringen)
+*** Lizenzmanagement
+** Support
+*** Supportzeiten
+*** Supportkanäle (Kontaktoptionen)
+*** Statusseiten (wenn vorhanden)
+** Lieferprozess
+*** Kommunikation neuer Releases
+*** Upgrade-Prozess (Downloadseiten bzw. Repositories, ggf. automatische Updates)
+*** Versionsschema und Release-Zyklen
+** Ansprechpartner
+*** fachliche Ansprechpartner
+*** Management inklusive Eskalationsweg
+
+.Format
+* Kurze Listen oder alternativ Übersichtstabellen
+
+.Quelle
+* TransICT?
+* SIAM Provider-Management
+* nicht verlinken, sondern importieren
+
+.Offene Punkte
+* Zu klären: Bietet SIAM Zugriff auf Lieferantenverträge?
+
+****
+
+== Angebotener Service Level und Verträge
+
+[cols="h,1",techname="Athene"]
+|===
+
+| SLA (SL/PL)
+|
+
+|===
+
+
+== Lieferanten
+
+
+

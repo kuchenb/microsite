@@ -1,0 +1,24 @@
+= MicrositeMaster Template
+
+Dies ist das neue MicrositeMaster Template zum clonen.
+
+Um die Microsite lokal zu bauen gibt es zwei Befehle:
+
+    ./dtcw generateSite
+
+baut die Site.
+Sie ist anschliessend in `build/microsite/output`zu finden.
+
+    ./dtcw previewSite
+
+startet einen kleinen Webserver im die erzeugte Microsite zu testen.
+
+Das Repository enthält auch eine `.gitlab-ci.yml` die mit einem Gitlab-Runner die Site baut und als Gitlab Page veröffentlicht.
+
+Über den docToolchain-Wrapper `./dtcw` stehen alle features von https://doctoolchain.github.io/docToolchain/[docToolchain] in diesem Projekt zur Verfügung.
+Als ersten Parameter kann `local` oder `docker` mitgegeben werden, um docToolchain als lokalen CLI Install oder in Docker auszuführen.
+Ist dieser Parameter nicht angegeben, wird der Wrapper selbst entscheiden, welches der einfachste Weg ist.
+
+//tag::about[]
+Ansprechpartner: Ralf.D.Mueller@deutschebahn.com
+//end::about[]

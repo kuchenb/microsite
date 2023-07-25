@@ -1,0 +1,55 @@
+:jbake-menu: -
+:jbake-type: page
+
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]]
+
+[[section-manuals-monitoring]]
+= Monitoring
+
+[.arc42help]
+****
+.Motivation
+Vor allem bei Störungen dient dieses Kapitel zur schnellen Orientierung. Entweder hier oder unter Konzepte sollte zudem
+der RRil 114.0240-05 (41) Genüge getan werden und das konzeptionelle Vorgehen beschrieben sein.
+
+.Inhalt
+
+* Aufzählung und Verlinkung der Tools für
+** Logging
+** Monitoring, Dashboards und Reports
+** Alerting
+** Analysewerkzeuge (kurze Aufzählung, konkrete Analysen stehen im Kapitel zum Störbetrieb)
+* ggf. Auflistung und Beschreibung der Metriken und Schwellwerte
+* Anleitung wie das MIRT Detailinformationen zur Verfügbarkeit des Service bekommt, etwa über Beschreibung von Dashboards zur SLA-Überwachung oder Checks, welche die Erreichbarkeit der Endpunkte überwachen. Diese Checks der Endpunkte werden vom MIRT auch als Health-Check bezeichnet und müssen dann vom MIRT auch erreichbar sein.
+
+.Format
+* Alle Werkzeuge verlinken, sodass sie schnell auffindbar sind, ggf. Hinweise zum Login nicht vergessen.
+* Hinweis auf wichtige Kenngrößen geben.
+
+.Quelle
+Überwiegend kurze Listen.
+Ggf. ausführliche Beschreibung von Analysen.
+Falls hier Metriken und Schwellwerte beschrieben sind, sollten diese Informationen regelmäßig direkt aus den
+Monitoring-Tools exportiert werden.
+
+****
+
+== Konzept
+// Monitoring kommt an drei Stellen im Runbook vor, nämlich unter Konzepte, Anleitungen und Prozesse. 
+// Ihr könnt alles an einer präferierten Stelle beschreiben und an den anderen Stellen darauf verlinken.
+// Alternativ könnt ihr die Aspekte aber auch auf die 3 Hauptkapitel verteilen, aber auch dann solltet ihr auf die
+// anderen Stellen verlinken.
+
+Siehe
+xref:../../02-arc42/08-concepts.adoc#section-concepts-monitoring[Architektur/Konzepte: Monitoring-Konzept] sowie
+xref:../../04-runbook/04-manuals.adoc#section-processes-eventm[Prozesse: Event Management]
+
+== Dashboards
+
+=== Cockpit
+
+=== ...
+
+== Reports
+
+== Analysewerkzeuge

@@ -1,0 +1,63 @@
+:jbake-title: 4. Lösungsstrategie
+:jbake-type: page_toc
+:jbake-status: published
+:jbake-menu: arc42
+:jbake-order: 4
+:filename: /04_solution_strategy.adoc
+ifndef::imagesdir[:imagesdir: ../../images]
+
+:toc:
+
+[[section-solution-strategy]]
+== Lösungsstrategie
+
+[role="arc42help"]
+****
+.Inhalt
+Kurzer Überblick über die grundlegenden Entscheidungen und Lösungsansätze, die Entwurf und Implementierung des Systems prägen.
+Hierzu gehören:
+
+* Technologieentscheidungen
+* Entscheidungen über die Top-Level-Zerlegung des Systems, beispielsweise die Verwendung gesamthaft prägender Entwurfs- oder Architekturmuster,
+* Entscheidungen zur Erreichung der wichtigsten Qualitätsanforderungen sowie
+* relevante organisatorische Entscheidungen, beispielsweise für bestimmte Entwicklungsprozesse oder Delegation bestimmter Aufgaben an andere Stakeholder.
+
+.Motivation
+Diese wichtigen Entscheidungen bilden wesentliche „Eckpfeiler“ der Architektur.
+Von ihnen hängen viele weitere Entscheidungen oder Implementierungsregeln ab.
+
+.Form
+Fassen Sie die zentralen Entwurfsentscheidungen *kurz* zusammen.
+Motivieren Sie, ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen, was Sie entschieden haben und warum Sie so entschieden haben.
+Vermeiden Sie redundante Beschreibungen und verweisen Sie eher auf weitere Ausführungen in Folgeabschnitten.
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-4/[Lösungsstrategie] in der online-Dokumentation (auf Englisch!).
+
+.Hinweis für link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/das-service-1x1[digitale Services] 
+In diesem Abschnitt kann nochmal erklärt werden, warum für eine Umsetzung als Service entschieden wurde. Ein Verweis auf eine entsprechende Architekturentscheidung reicht. In dieser Architekturentscheidung sollte das link:https://servitization.gitpages.tech.rz.db.de/02_DDD/best-practices/problem-strukturieren.html#werkzeuge[Bounded Context Canvas] enthalten sein.
+
+****
+
+Die grundlegenen Lösungsstrategien für Services werden durch die link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/service-prinzipien[Service-Prinzipien] definiert. Für die Umsetzung sind insbesondere die folgenden Prinzipien zu berücksichtigen:
+
+[.aaa]
+|===
+| Service-Prinzip | Berücksichtigung in der Umsetzung
+
+| Service-as-default! 
+| _<TODO>_
+| Search & Find!
+|_<TODO>_
+| Public Service!
+|_<TODO>_
+| Try me!
+|_<TODO>_
+| Avoid Broad-Stack-Tests!
+|_<TODO>_
+| Savety first!
+|_<TODO>_
+| Core feature complete!
+|_<TODO>_
+|===

@@ -1,0 +1,120 @@
+:jbake-title: 3. Kontextabgrenzung
+:jbake-type: page_toc
+:jbake-status: published
+:jbake-menu: arc42
+:jbake-order: 3
+:filename: /03_system_scope_and_context.adoc
+ifndef::imagesdir[:imagesdir: ../../images]
+
+:toc:
+
+[[section-system-scope-and-context]]
+== Kontextabgrenzung
+
+[role="arc42help"]
+****
+.Inhalt
+Die Kontextabgrenzung grenzt das System von allen Kommunikationsbeziehungen (Nachbarsystemen und Benutzerrollen) ab.
+Sie legt damit die externen Schnittstellen fest.
+
+Differenzieren Sie fachliche (fachliche Ein- und Ausgaben) und technische Kontexte (Kanäle, Protokolle, Hardware), falls nötig.
+
+.Motivation
+Die fachlichen und technischen Schnittstellen zur Kommunikation gehören zu den kritischsten Aspekten eines Systems.
+Stellen Sie sicher, dass Sie diese komplett verstanden haben.
+
+.Form
+Verschiedene Optionen:
+
+* Diverse Kontextdiagramme
+* Listen von Kommunikationsbeziehungen mit deren Schnittstellen
+
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-3/[Kontextabgrenzung] in der online-Dokumentation (auf Englisch!).
+
+****
+
+=== Fachlicher Kontext
+
+[role="arc42help"]
+****
+.Inhalt
+Festlegung *aller* Kommunikationsbeziehungen (Nutzer, IT-Systeme, ...) mit Erklärung der fachlichen Ein- und Ausgabedaten oder Schnittstellen.
+Zusätzlich (bei Bedarf) fachliche Datenformate oder Protokolle der Kommunikation mit den Nachbarsystemen.
+
+.Motivation
+Alle Beteiligten müssen verstehen, welche fachlichen Informationen mit der Umwelt ausgetauscht werden.
+
+.Form
+Alle Diagrammarten, die das System als Blackbox darstellen und die fachlichen Schnittstellen zu den Nachbarsystemen beschreiben.
+
+Alternativ oder ergänzend können Sie eine Tabelle verwenden.
+Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikationsbeziehung, Eingabe, Ausgabe.
+
+.Hinweis für link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/das-service-1x1[digitale Services]
+Für Services ist ein fachliches Kontext-Diagram ausreichend, welches aus dem link:https://servitization.gitpages.tech.rz.db.de/02_DDD/best-practices/problem-strukturieren.html#werkzeuge[Bounded Context Canvas] abgeleitet werden kann. Wichtig ist, dass die Service Consumer nicht einzeln aufgeführt werden, sondern nur als Rolle. Falls es verschiedene Rollen für Service Consumer existieren, sind alle Rollen aufzuführen. Wichtig ist dann auch eine Erklärung der Rollen.
+
+Falls ein Service durch die Dekomposition eines anderen System hervorgegangen ist, dann kann es sinnvoll sein, dieses Ursprungssystem als besonderen Service Consumer hervorzuheben.
+
+****
+
+**<Diagramm und/oder Tabelle>**
+
+**<optional: Erläuterung der externen fachlichen Schnittstellen>**
+
+=== Technischer Kontext
+
+[role="arc42help"]
+****
+.Inhalt
+Technische Schnittstellen (Kanäle, Übertragungsmedien) zwischen dem System und seiner Umwelt.
+Zusätzlich eine Erklärung (_mapping_), welche fachlichen Ein- und Ausgaben über welche technischen Kanäle fließen.
+
+.Motivation
+Viele Stakeholder treffen Architekturentscheidungen auf Basis der technischen Schnittstellen des Systems zu seinem Kontext.
+
+Insbesondere bei der Entwicklung von Infrastruktur oder Hardware sind diese technischen Schnittstellen durchaus entscheidend.
+
+.Form
+Beispielsweise UML Deployment-Diagramme mit den Kanälen zu Nachbarsystemen, begleitet von einer Tabelle, die Kanäle auf Ein-/Ausgaben abbildet.
+
+.Zielgruppe
+Die Schnittstellendefinitionen sind für viele Use Cases interessant.
+Die Schnittstellen müssen nicht nur für die Implementierung definiert sein.
+Auch für den täglichen Betrieb, das Monitoring und Security-Audits sind diese Definitionen äusserst wichtig.
+Dementsprechend anthalten die Beschreibungen nicht nur technische Aspekte, sondern z.B. auch Informationen über den Schutzbedarf der übertragenen Daten.
+
+.Hinweis für link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/das-service-1x1[digitale Services]
+Wir bevorzugen link:https://c4model.com/[C4-Modell] als Diagramme. Ein Beispiel für ein System Context Diagram:
+
+[.framed]
+[.text-center]
+[plantuml,context,png]
+----
+include::context.puml[]
+----
+
+
+****
+
+**<Diagramm oder Tabelle>**
+
+**<Erläuterung der externen technischen Schnittstellen>**
+
+**<Mapping fachliche auf technische Schnittstellen>**
+
+
+[IMPORTANT]
+====
+In der https://dbmp.intranet.deutschebahn.com/DBMP_de/konzernregeln/regelwerksdatenbanken/krwd_suche?RegelwerkNrExtern=114.0243&sprache=DE&typ=krwdliste[KoRil 114.0243 Handbuch ITK-Sicherheit - Sichere Netze 22] ist folgendes festgelegt:
+
+"Die zur Erfüllung der Informationsflussvereinbarungen benötigten
+Kommunikationsbeziehungen einer Anwendung inklusive unterstützender Dienste sind in Form einer Kommunikationsmatrix
+durch den Anwendungsverantwortlichen für jede Anwendung
+festzulegen."
+
+Der entsprechende https://wiki.intranet.deutschebahn.com/wiki/display/beam/Informationsflussvereinbarung[Workflow mit einem Word-Template ist im BEAM-Wiki] hinterlegt.
+Anstelle des Word-Templates kann natürlich auch jeweils ein AsciiDoc-Dokument erstellt und zur UNterschrift nach PDF gewandelt werden.
+====

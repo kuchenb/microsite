@@ -1,0 +1,44 @@
+:jbake-menu: -
+:jbake-type: page
+include::../config.adoc[]
+
+[[section-concepts-user]]
+== Benutzerkonzept
+
+[role="arc42help"]
+****
+.Motivation
+Die RRil 114.0240 & 114.0242 fordert die Erstellung eines Benutzerkonzeptes.
+
+.Inhalt
+Es kann die Vorlage lt. RRil 114.0242 Anhang verwendet werden. 
+
+Die Vorlage hier schlägt eine im Vergleich zur Vorlage etwas verkürzte Gliederung vor. Das Konzept sollte
+vor allem folgende Punkte erläutern:
+
+* Anforderungen, explizit Rollenunverträglichkeiten benennen
+* Autorisierungsprüfung beschreiben
+** Welche Rechte gibt es und welche Funktionen ermöglichen sie?
+** Gibt es Super User bzw. User, die nicht RBAC unterliegen?
+* Role Based Access Control beschreiben
+** Welche Rollen gibt es, welche Rechte haben die Rollen?
+** Wie ist der Prozess der Rollenzuweisung zu konzeptionieren?
+* Attribute Based Access Control beschreiben (falls relevant)
+** Wie werden Benutzer logisch identifiziert?
+** Welche Attribute werden ansonsten bei der Berechtigung berücksichtigt?
+
+.Form
+
+Konzeptpapier
+
+****
+
+== Anforderungen an das Benutzerkonzept
+== Rechte nach Funktionalität
+== RBAC
+=== Beschreibung der Rollen
+=== Genehmigungsworkflow für Rollenzuweisung
+== ABAC
+=== Relevante Attribute
+=== Autorisierungsregeln
+

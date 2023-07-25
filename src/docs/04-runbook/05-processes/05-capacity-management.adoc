@@ -1,0 +1,35 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-processes-capm]]
+
+= Capacity Management
+
+[.arc42help]
+****
+.Motivation
+
+Es ist gut zu wissen, welche Ressourcen in welchem Umfang das Team bereits beschafft hat
+und in welchem Umfang sie in der Kostenkalkulation enthalten sind.
+
+.Inhalt
+
+* Auflistung der Ressourcen-Pools, etwa
+  * Anzahl bereits beschaffter Lizenzen
+  * Infrastruktur im Nicht-Cloud-Betrieb
+  * ggf. auch Auflistung der Soft-Limits im Cloud-Betrieb
+* aktuelle Betriebskostenkalkulation
+* Hinweise zum Budget-Monitoring (ggf. Absprung in die Anleitung zum Monitoring)
+
+.Format
+Tabellarische Auflistung der aktuellen Kapazitäten und Budgets, im Idealfall als Link
+in die entsprechenden Tools.
+
+.Quelle
+Heute ist die einzige Quelle die TransICT für Lizenzen und Nicht-Cloud-Ressourcen und
+entsprechende Dashboards der Cloud-Provider zu Limits und Budget.
+Zukünftig erfolgt die Kalkulation ggf. in OCM.
+
+****
+

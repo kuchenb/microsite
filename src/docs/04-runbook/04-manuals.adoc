@@ -1,0 +1,40 @@
+:jbake-title: 4. Anleitungen
+
+ifndef::attributes-loaded[include::../_attributes.adoc[]]]
+
+[[section-manuals]]
+== Anleitungen
+
+[role="arc42help"]
+****
+.Motivation
+Jeder im Team sollte auf Basis dieser Anleitungen in der Lage sein den Tagesdienst oder die Rufbereitschaft zu übernehmen.
+Teams, die viel automatisiert haben, brauchen nur wenige Anleitungen.
+
+.Inhalt
+Von der Installation der notwendigen Werkzeuge, dem Finden der wichtigen Ablageplätze und Webseiten über das Deployment
+neuer Softwarelieferungen bis hin zur Fehlerbeseitigung sollten hier alle manuellen Schritte beschrieben sein, um das
+System am Laufen zu halten.
+
+.Form
+Die Anleitungen lassen sich auch gut als Runbook im engeren Sinne formulieren, d. h. mit direkten Links für das Ausführen
+von Aktionen.
+
+****
+
+:folder: 04-manuals
+
+<<<
+include::{folder}/01-onboarding.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/02-deployment.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/03-monitoring.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/04-normal-operation.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/05-faulty-operation.adoc[leveloffset=+1]

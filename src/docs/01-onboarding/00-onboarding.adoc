@@ -1,0 +1,13 @@
+:imagesdir: .
+include::../_attributes.adoc[]
+= Onboarding Guide
+:author: <AUTOR>
+:revnumber: 0.1
+:revdate: 2020-00-00
+
+== Einleitung
+
+== Zielgruppe
+
+== Einrichtung Entwicklungsumgebung
+

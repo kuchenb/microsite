@@ -1,0 +1,38 @@
+:jbake-title: 2. Architektur und Umgebung
+
+[[section-konzepte]]
+== Architektur und Umgebungen
+
+ifndef::attributes-loaded[include::../_attributes.adoc[]]
+
+[.arc42help]
+****
+.Motivation
+Für das Verständnis aller nachfolgenden Abschnitte braucht der Leser ein gewisses technisches Verständnis von diesem IT-System
+sowie der aufgebauten Betriebsinfrastruktur.
+
+.Inhalt
+
+Dieses Kapitel gibt einen Überblick über Anforderungen, die betriebene Softwarelösung und die aufgebauten oder geplanten Betriebsumgebungen.
+
+.Format
+Hier sollten primär Diagrammen und Übersichtsbilder zum Einsatz kommen, deren Inhalte textuell erläutert sind.
+
+.Quellen
+* entsprechende Abschnitte aus der Architekturbeschreibung
+* automatisch generierte Bilder aus Code oder Laufzeitumgebungen
+****
+
+:folder: 02-architecture-overview
+<<<
+include::{folder}/01-requirements-and-constraints.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/02-system-scope-and-context.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/03-building-block-view.adoc[leveloffset=+1]
+
+<<<
+include::{folder}/04-deployment-view.adoc[leveloffset=+1]
+

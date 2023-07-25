@@ -1,0 +1,11 @@
+:filename: pdfTheme/assets/README.adoc
+= Hinweis zu den verwendeten Schriften
+
+IMPORTANT: Diese beigefügten Hausschriften sind nur für DB interne Mitarbeiter kostenfrei!
+
+Alle externen DB Supplier müssen eine einmalige kostenpflichtige Lizenz erwerben.
+
+Hier der Link für den externen Lizenzerwerb der DB Type bzw. DB Office Unternehmensschriften:
+
+https://www.urwtype.com/corporate-type/deutsche-bahn-db-typedb-office/
+

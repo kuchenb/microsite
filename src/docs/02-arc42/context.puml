@@ -1,0 +1,13 @@
+@startuml context
+!include <c4/C4_Context.puml>
+
+Person_Ext(kassierer, "Kassierer", "")
+
+System(buchungsservice, "Buchungsservice", "Service zur Buchung eines Tickets")
+System_Ext(saalplanung, "Saalplanung", "Service zur Erstellung der Saalbelegungen")
+System_Ext(saalbeschreibung, "Saalplanung", "Service zur Erstellung der Saalbelegungen")
+
+Rel(kassierer, buchungsservice, "Tickets, Saalplan, Sitzplatz")
+Rel(buchungsservice, saalplanung, "Liest einmal am Tag den aktuellen Saalplan")
+Rel(buchungsservice, saalbeschreibung, "Liest einmal am Tag die Saalinformationen")
+@enduml

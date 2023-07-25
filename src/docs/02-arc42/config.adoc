@@ -1,0 +1,50 @@
+:jbake-menu: -
+:jbake-type: page
+
+// asciidoc settings for DE (German)
+// ==================================
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Inhaltsverzeichnis
+
+// enable table-of-contents
+:toc:
+
+:caution-caption: Achtung
+:important-caption: Wichtig
+:note-caption: Hinweis
+:tip-caption: Tip
+:warning-caption: Warnung
+
+:appendix-caption: Anhang
+:example-caption: Beispiel
+:figure-caption: Abbildung
+:table-caption: Tabelle
+
+// where are images located?
+:imagesdir: ../images
+
+ifeval::["{backend}" == "html5"]
+ifeval::["{env}" != "gitlab"]
+++++
+<style>
+span.highlight_ok {
+    background-color: lightgreen;
+}
+span.highlight_todo {
+    background-color: lightyellow;
+}
+</style>
+++++
+endif::[]
+endif::[]
+
+:dbck30: ../../../build/refs/dbck30/src/docs/excel/DBCK3.0.xlsx/DBCK3.0.adoc
+:sec-ass: ../../../../build/refs/ass/src/docs/modules
+
+:icons: font
+
+//kroki server doesn't currently work for pdf
+ifeval::["{backend}" != "pdf"]
+:diagram-server-url: https://kroki.default.prd.swd-gitlab.mop.comp.db.de
+:diagram-server-type: kroki_io
+endif::[]

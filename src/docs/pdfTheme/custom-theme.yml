@@ -1,0 +1,173 @@
+---
+extend: default-with-fallback-font
+# Color definitions taken from
+# https://db-ui-db-ui-core.berlin.dbcs.db.de/?p=viewall-base-
+db:
+  color:
+    text: '#131821'  # ~cool-gray
+    title-gray: '#9ba0aa'  # Hintergrundakzent der titlepage ~cool-gray-350
+    text-gray: '#646973'  # ~cool-gray-500
+    text-black: '#000000'
+    table-gray: '#d7dce1'  # ~cool-gray-200
+    highlight1: '#ec0016'  # ~red-500
+    highlight2: '#0087B9'  # ~cyan
+    link: $db-color-highlight2
+    text-red: $db-color-highlight1
+font:
+  catalog:
+    merge: true
+    DB Head:
+      normal: assets/dbhea03.ttf
+      bold: assets/dbhea07.ttf
+      italic: assets/dbhea33.ttf
+      bold_italic: assets/dbhea37.ttf
+    DB Office:
+      normal: assets/dboff03.ttf
+      bold: assets/dboff06.ttf
+      italic: assets/dboff33.ttf
+      bold_italic: assets/dboff36.ttf
+    DejaVu:
+      normal: assets/DejaVuSans.ttf
+page:
+  layout: portrait
+  margin: [0.75in, 1in, 0.75in, 1in]
+  size: A4
+title_page:
+  align: left
+  background-image: assets/titlepage.svg
+  title:
+    font_family: DB Head
+    font-size: 22
+  subtitle:
+    font_family: DB Head
+    font-size: 22
+    font-style: bold
+conum:
+  font_family: DB Office
+code:
+  font_family: Courier
+base:
+  font_family: DB Office
+  font_color: $db-color-text
+  font_size: 11
+  line_height: 1.1
+heading:
+  font_color: $db-color-text
+  font_family: DB Office
+  font_size: 11
+  font_style: bold
+  margin-top: 9pt
+  margin-bottom: 3pt
+  chapter:
+    break-before: auto
+  part:
+    break-before: auto
+  h1:
+    font_family: DB Head
+    font_size: 22
+    margin-bottom: 15pt
+  h2:
+    font_color: $db-color-text-gray
+    font_size: 15
+  h3:
+    font_color: $db-color-text-red
+    font_size: 11
+    # border-top not possible (otherwise we´d set it to solid red 1pt)
+  h4:
+    font_color: $db-color-text
+    font_size: 11
+  h5:
+    font_color: $db-color-text
+    font_size: 11
+link:
+  font_color: $db-color-link
+outline_list:
+  line-height: $base-line-height
+  indent: 0.72cm
+ulist:
+  marker:
+    disc:
+      content: "\u25ae"
+      font-family: 'DejaVu'
+      line-height: 0.72 * $base-line-height
+      font-size: 11
+      font-color: $db-color-text-red
+    circle:
+      content: "\u25ae"
+      font-family: 'DejaVu'
+      line-height: 0.72 * $base-line-height
+      font-size: 11
+      font-color: $db-color-text-red
+    square:
+      content: "\u25ae"
+      font-family: 'DejaVu'
+      line-height: 0.72 * $base-line-height
+      font-size: 11
+      font-color: $db-color-text-red
+    unchecked:
+      content: "\u2610"
+      font-family: 'DejaVu'
+      line-height: 0.72 * $base-line-height
+      font-size: 14
+      font-color: $db-color-text-black
+    checked:
+      content: "\u2611"
+      font-family: 'DejaVu'
+      line-height: 0.72 * $base-line-height
+      font-size: 14
+      font-color: $db-color-text-black
+header:
+  height: 0.75in
+  line-height: $base-line-height
+  font_style: bold
+  font_size: 12
+  font_color: $db-color-text-gray
+  recto:
+    left:
+      content: 'DB INTERN'
+  verso:
+    left:
+      content: 'DB INTERN'
+footer:
+  height: 0.75in
+  line-height: $base-line-height
+  font-size: 7
+  recto:
+    left:
+      content: '{doctitle}'
+    right:
+      content: '{page-number}'
+  verso:
+    left:
+      content: '{doctitle}'
+    right:
+      content: '{page-number}'
+image:
+  align: left
+caption:
+  align: left
+  font-color: $db-color-text
+  font-size: 9
+  font-style: normal
+  margin-bottom: 3pt
+block:
+  margin-bottom: 6
+blockquote:
+  border-left-width: 5
+  font-style: italic
+  cite:
+    font-style: italic
+    font-size: 7
+description-list:
+  description-indent: 0.36cm
+admonition:
+  icon:
+    important:
+      stroke-color: $db-color-text-red
+table:
+  font-size: 10
+  head:
+    background-color: $db-color-table-gray
+role:
+  vertraulichkeitsvermerk:
+    font-color: '#ffffff'  # hide by setting it to white

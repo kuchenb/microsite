@@ -1,0 +1,13 @@
+:imagesdir: .
+include::../_attributes.adoc[]
+
+= Guidelines
+:author: <AUTOR>
+:revnumber: 0.1
+:revdate: 2021-00-00
+
+Hier ist die zentrale _Linkliste aller Guidelines_ des Teams.
+
+* link:https://git.tech.rz.db.de/db-code-styleguides/0-style-guide-index/-/blob/master/java.md[Java Guidelines]
+// * xref:dod.adoc[Definition of Done] (TODO)
+* ...

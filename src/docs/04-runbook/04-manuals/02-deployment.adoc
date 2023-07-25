@@ -1,0 +1,45 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]]
+
+[[section-manuals-deployment]]
+
+= Deployment
+
+[.arc42help]
+****
+.Motivation
+
+Jedes Teammitglied sollte (etwa im Notfall) das System oder die Infrastruktur ändern, neu deployen oder auf eine
+ältere Version zurückfallen können.
+
+Dieses Kapitel beschreibt alle dazu erforderlichen Handgriffe.
+
+.Inhalt
+
+Dieses Kapitel beschreibt was zu tun ist, um eine neuere oder ältere Version der Anwendung zu installieren und zu
+starten. Je höher der Automatisierungsgrad des Deployments, desto weniger ist hier zu beschreiben.
+
+Mögliche Aspekte:
+
+* Deployment konzeptionell beschreiben bzw. das Konzept in der Architekturbeschreibung verlinken
+* Eingangsbedingungen für das Deployment
+* Sicherheitskopien
+* Schritte zur Deinstallation
+* manuelle Download- und Installationsschritte
+* Checkpoints zur Validierung von Einzelschritten
+* Recovery: Rollback von Einzelschritten
+* Neustart der Anwendung (manuelle Schritte, Startreihenfolge, etc.)
+* https://de.wikipedia.org/wiki/Smoke_testing[Smoke Tests] vor Freigabe der Anwendung
+* Recovery: Rollback des gesamten Deployments
+
+Automatisierte Schritte müsst ihr hier nicht dokumentieren. Allerdings sollte hier die Anleitung zum Anstoßen des
+Automatismus stehen sowie die Erfolgskontrolle.
+
+.Format
+Checklisten-artige Schritt-für-Schritt-Anleitungen möglichst mit Prüfkriterien für die Erfolgsprüfung von Einzelschritten.
+
+.Quelle
+Die Deployment-Anleitungen sollten ggf. in den einzelnen Repositories stehen und hier nur verlinkt werden.
+
+****

@@ -1,0 +1,50 @@
+:jbake-title: 2. Randbedingungen
+:jbake-type: page_toc
+:jbake-status: published
+:jbake-menu: arc42
+:jbake-order: 2
+:filename: /02_architecture_constraints.adoc
+ifndef::imagesdir[:imagesdir: ../../images]
+
+:toc:
+
+[[section-architecture-constraints]]
+== Randbedingungen
+
+:url-1: https://dbsw.sharepoint.com/teams/Architekturgilde/Lists/Architekturprinzipien/AllItems.aspx?viewid=55e8e4c0%2D3fb7%2D436f%2D9d2b%2Dc9083f5903e4
+
+[role="arc42help"]
+****
+.Inhalt
+Randbedingungen und Vorgaben, die ihre Freiheiten bezüglich Entwurf, Implementierung oder Ihres Entwicklungsprozesses einschränken.
+Diese Randbedingungen gelten manchmal organisations- oder firmenweit über die Grenzen einzelner Systeme hinweg.
+
+.Motivation
+Für eine tragfähige Architektur sollten Sie genau wissen, wo Ihre Freiheitsgrade bezüglich der Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
+Sie können Randbedingungen vielleicht noch verhandeln, zunächst sind sie aber da.
+
+.Form
+Einfache Tabellen der Randbedingungen mit Erläuterungen.
+Bei Bedarf unterscheiden Sie technische, organisatorische und politische Randbedingungen oder übergreifende Konventionen (beispielsweise Programmier- oder Versionierungsrichtlinien, Dokumentations- oder Namenskonvention).
+
+
+.Weiterführende Informationen
+
+Siehe https://docs.arc42.org/section-2/[Randbedingungen] in der online-Dokumentation (auf Englisch!).
+
+.Hinweis für link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/das-service-1x1[digitale Services]
+Für Services müssen an dieser Stelle die link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/service-kerneigenschaften[Service-Kerneigenschaften] als Rahmenbedingung genannt werden. Weiter müssen die für die link:https://servitization.gitpages.tech.rz.db.de/03_Kerneigenschaften/01_usability.html[Kerneigenschaften definierten  Qualitätsszenarien] durch den Service erfüllt werden. Auch die link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/service-prinzipien[Service-Prinzipien] bilden Rahmenbedingungen.  
+
+****
+
+Die vorliegende System-Architektur folgt den {url-1}[Architekturprinzipien] der Architekturgilde.
+Abweichungen von diesen Prinzipien sind mit der Architekturgilde abzusprechen und hier zu dokumentieren.
+
+Des weiteren muss sich die Umsetzung an die entpsrechenden IT-Richtlinien halten und sich reibungslos in die Organisation der DB Systel einfügen.
+Dies betrifft vorallem die Betreibbarkeit des Systems.
+
+Aufgrund der Art der Applikation muss speziell auch auf die EInhaltung der DSGVO geachtet werden.
+
+=== Service Kerneigenschaften
+
+Für einen Service müssen grundsätzlich die link:https://db-planet.deutschebahn.com/pages/servitization/apps/content/service-kerneigenschaften[Service-Kerneigenschaften] erfüllt sein. Für diese Kerneigenschaften sind Qualitätsszenarien definiert, die entsprechend durch den Service erfüllt werden müssen (siehe hierzu link:https://servitization.gitpages.tech.rz.db.de/03_Kerneigenschaften/01_usability.html[Qualitätsszenarien])

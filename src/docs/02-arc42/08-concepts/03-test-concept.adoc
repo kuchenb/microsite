@@ -1,0 +1,27 @@
+:jbake-menu: -
+:jbake-type: page
+include::../config.adoc[]
+
+[[section-concepts-test]]
+== Testkonzept
+
+[role="arc42help"]
+****
+.Motivation
+Ein Konzept ist mindestens für die Sicherheitstests lt. RRil 114.0247-05-07 zu hinterlegen. In einem komplexen Umfeld mit
+diversen Zulieferern ist hier auch eine gute Stelle, um zu beschreiben, wer welche Tests durchführt und insbesondere was
+die Rolle des Betreibers bei den Tests ist.
+
+.Inhalt
+Mögliche Inhalte sind:
+
+* Beschreibung der Sicherheitstests (siehe 114.0247-05-07)
+* Teststufen
+* Geforderter Automatisierungsgrad
+* Zusammenspiel von Monitoring und Tests
+
+.Form
+* Kurze und prägnante Beschreibung ggf. mit einer Grafik für die Teststufen bzw. die automatisierte Test-Pipeline.
+
+****
+

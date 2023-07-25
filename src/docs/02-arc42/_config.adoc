@@ -1,0 +1,5 @@
+// see https://db-planet.deutschebahn.com/pages/a0ecdee2-ed3d-4e7d-9605-1ee9be47fc1a/apps/blog/304d71de-443a-4caf-a75b-51a939d491d8/view/d7094db3-f479-4330-86bb-59c36dbc3369
+ifeval::["{backend}" != "pdf"]
+:diagram-server-url: https://kroki.default.prd.swd-gitlab.mop.comp.db.de/
+:diagram-server-type: kroki_io
+endif::[]

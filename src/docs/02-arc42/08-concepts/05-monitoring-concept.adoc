@@ -1,0 +1,54 @@
+:jbake-menu: -
+:jbake-type: page
+include::../config.adoc[]
+
+[[section-concepts-monitoring]]
+== Monitoring-Konzept
+
+[role="arc42help"]
+****
+.Motivation
+Das Monitoring der Anwendung sollte schon früh im Entstehungszyklus der Anwendung berücksichtigt werden, um zu verstehen
+wie etwa Entwickler aus dem Anwendungscode heraus Fehlerzustände und Ressourcenengpässe an die richtige Stelle bringen
+können. Monitoring sollte auch bei der Auswahl von Komponenten von Drittherstellern berücksichtigt werden. Zudem fordert
+die RRil 114.0240-05 (41) ein Konzept zu Logging und Auditing.
+
+.Inhalt
+Mögliche Inhalte:
+
+* Betrachtete Ebenen des Monitorings (etwa Plattform, Anwendung, Fachprozesse)
+* Welche Fähigkeiten soll mein Monitoringkonzept bieten?
++
+Beispiele für solche Fähigkeiten sind 
+
+    ** zentrales Logging
+    ** zentrales Security Auditing
+    ** Ad-hoc-Analysen
+    ** Distributed Tracing
+    ** Application Metrics
+    ** System Monitoring
+    ** Alerting
+    ** Dashboards
+    ** Reporting
+    ** Crash-Reports
+    ** Application Performance Management
+
+* Welche zentralen Lösungsbausteine gibt es?
++
+Beispiele sind AWS CloudWatch, Prometheus
+* Wie sind die Lösungsbausteine miteinander verbunden?
+
+.Form
+Durch Grafiken und Tabellen könnt ihr den Umfang klein halten, vor allem, wenn es sich eher um allgemein bekannte
+Monitoringkonzepte handelt.
+
+****
+
+// Monitoring kommt an drei Stellen im Runbook vor, nämlich unter Konzepte, Anleitungen und Prozesse. 
+// Ihr könnt alles an einer präferierten Stelle beschreiben und an den anderen Stellen darauf verlinken.
+// Alternativ könnt ihr die Aspekte aber auch auf die 3 Hauptkapitel verteilen, aber auch dann solltet ihr auf die anderen Stellen verlinken.
+
+Siehe
+xref:../../04-runbook/04-manuals.adoc#section-manuals-monitoring[Runbook/Anleitungen: Monitoring]
+sowie
+xref:../../04-runbook/05-processes.adoc#section-processes-eventm[Runbook/Prozesse: Event Management]

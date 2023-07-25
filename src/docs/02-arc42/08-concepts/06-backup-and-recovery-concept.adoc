@@ -1,0 +1,35 @@
+:jbake-menu: -
+:jbake-type: page
+include::../config.adoc[]
+
+[[section-concepts-backup-recovery]]
+== Datensicherungs- und Wiederherstellungskonzept
+
+[role="arc42help"]
+****
+.Motivation
+Den Zustand eines Systems konsistent zu sichern und ggf. zurückzusetzen ist oft nicht trivial, vor allem wenn
+unterschiedliche abhängige Datenspeicher wie etwa Datenbank, Filesystem und Messaging im Einsatz sind. Daher sollte
+die Notwendigkeit des Zurücksetzens von Anfang an in der Architektur berücksichtigt werden.
+
+Zudem fordert die RRil 114.0240-05-36/38 ein Konzept zur Datensicherung und Wiederherstellung.
+
+.Inhalt
+Mögliche Inhalte:
+
+* Welche Komponenten mit Zustand gibt es im System?
+* Wie kann ich diese jeweils sichern und wie wieder herstellen?
+* Welche Konsistenzbeziehungen gibt es zwischen den Sicherungen und wie kann ich diese beim Einspielen von Backups
+wieder herstellen?
+
+.Form
+Ggf. sind die betreffenden Komponenten bereits in der Komponentenansicht enthalten, dann kann sich dieses Konzept auf
+die Aufzählung der Komponenten und die Zuordnung zur Sicherungs- und Recovery-Mechansmismen sowie Hinweise zu kritischen
+Konsistenzbeziehungen beschränken.
+
+****
+
+// Das Konzept kann hier hinterlegt werden oder direkt in der Anleitung zum Störbetrieb.
+
+Siehe xref:../../04-runbook/04-manuals/05-faulty-operation.adoc#section-manuals-faulty-operation[Runbook/Anleitungen: Störbetrieb]
+

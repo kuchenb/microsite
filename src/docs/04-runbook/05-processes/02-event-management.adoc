@@ -1,0 +1,32 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-processes-eventm]]
+= Event Management (Monitoring)
+
+[.arc42help]
+****
+.Motivation
+Der Betreiber sollte vor dem Nutzer wissen, wenn es Probleme mit dem System gibt. Dafür dient das Alerting wie hier
+beschrieben.
+
+.Inhalt
+
+Hier sollte stehen, wie Schwellwerte überwacht werden, wie daraus Alarme entstehen, wie diese klassifiziert werden und
+in wieweit daraus Incidents oder Änderungen in Produktion entstehen.
+Siehe dazu auch den Prozess zum
+https://db-systel.symbioweb.com/systel/ProcLib/go/y6w9nqmrgdwn3dk028bz9dzkn7[Event Management in der ProcLib].
+
+.Format
+Grafische Darstellung, textuell oder in einer Tabelle, gruppiert nach der Art des Ereignisses.
+****
+
+// Monitoring kommt an drei Stellen im Runbook vor, nämlich unter Konzepte, Anleitungen und Prozesse. 
+// Ihr könnt alles an einer präferierten Stelle beschreiben und an den anderen Stellen darauf verlinken.
+// Alternativ könnt ihr die Aspekte aber auch auf die 3 Hauptkapitel verteilen, aber auch dann solltet ihr auf die
+// anderen Stellen verlinken.
+
+
+Siehe xref:../../02-arc42/08-concepts.adoc#section-concepts-monitoring[Architektur/Konzepte: Monitoring-Konzept] sowie
+xref:04-manuals.adoc#section-manuals-monitoring[Anleitungen: Monitoring]

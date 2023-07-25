@@ -1,0 +1,31 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-processes-configm]]
+= Configuration Management
+
+[.arc42help]
+****
+.Motivation
+Die Strukturierung des IT-Systems in Configuration-Items (CIs) ist die Grundlage für Event-, Incident- und Change-Management.
+Gerade für übergreifende Security Incidents ist die Verknüpfung von Infrastruktur-Assets mit Configuration Items sehr
+wichtig.
+
+.Inhalt
+
+Die Strukturierung des Systems in Config-Items und deren Abhängigkeiten.
+Falls ein automatischer Export möglich ist auch die aktuellen Versionen und Patch-Stände der CIs aufzeigen.
+Ansonsten beschreiben, wie man die Information zu Versions- und Patch-Stände ermitteln kann.
+
+.Format
+Möglichst grafische Darstellung
+
+.Quelle
+Heute ist die einzige Quelle die TransICT.
+Zukünftig können wir die Config-Items hoffentlich auch als Code darstellen – aber das ist noch in Diskussion.
+Im Idealfall lassen sich jedenfalls alle Informationen inklusive Abhängigkeiten aus dem Config-Mgmt-Werkzeug ziehen und die
+Grafik automatisch erzeugen.
+
+****
+

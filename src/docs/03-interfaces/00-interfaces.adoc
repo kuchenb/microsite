@@ -1,0 +1,14 @@
+:imagesdir: .
+include::../_attributes.adoc[]
+
+= Schnittstellenverzeichnis
+
+
+// hier die Schnittstellendokumente auflisten, ggf. auch aus den Code-Repositories importieren, falls sie 
+// dezentral abgelegt sind.
+
+// diese Zeile ist nur ein Beispiel, im finalen Dokument nicht auf den Template-Ordner verlinken
+* xref:01-interface-template.adoc[Schnittstelle XYZ]
+* ...
+
+

@@ -1,0 +1,47 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-processes-bcm]]
+
+= Business Continuity Management (Notfallmanagement)
+
+[.arc42help]
+****
+.Motivation
+
+Hier sind die Informationen für die Wiederherstellung bei einer Großstörung.
+
+.Inhalt
+
+TODO: Erarbeitet aktuell das BCM Team
+Hier stehen die Prozessinformationen, etwa wer wen informiert sowie die Notfallpläne.
+
+Ein Notfallplan bezieht sich jeweils auf ein bestimmtes Notfallszenario und beschreibt die Schritte, die im Fall
+des Falles durchzuführen sind.
+Notfälle können Ausfälle beim Cloud-Provider sein, Ausfälle von Schnittstellen oder etwa ein Fehlverhalten des Systems.
+Hier geht es allerdings nur um Ausnahmezustände, für die es keine automatisierte Fehlerbehandlung in der Anwendung bzw.
+Infrastruktur gibt (Beispiel: Auf den Ausfall einer AWS
+Availability-Zone sollte die Anwendung automatisch reagieren. Dafür sollte es auch regelmäßige Tests geben.)
+
+.Format
+
+Für konkrete Anleitungen zum Recovery kann ggf. auf xref:../../04-runbook/04-manuals.adoc#section-manuals-faulty-operation[Anleitungen: Störbetrieb]
+verwiesen werden.
+
+TODO: s.o.
+
+.Quelle
+TODO: s.o.
+
+****
+
+Siehe auch
+xref:../../02-arc42/08-concepts.adoc#section-concepts-bc[Architektur/Konzepte: Business Continuity Concept]
+sowie
+xref:../../04-runbook/04-manuals.adoc#section-manuals-faulty-operation[Anleitungen: Störbetrieb]
+
+== Notfallpläne und Wiederherstellung (Recovery)
+
+=== <Notfall 1>
+=== ...

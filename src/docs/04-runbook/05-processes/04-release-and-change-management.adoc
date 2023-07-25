@@ -1,0 +1,155 @@
+:jbake-menu: -
+:jbake-type: page
+ifndef::attributes-loaded[include::../../_attributes.adoc[]]
+
+[[section-processes-relm]]
+= Release und Change Management
+
+[.arc42help]
+****
+.Motivation
+Diese Informationen sind notwendig, um Releases und jegliche Änderungen (Changes) an IT Services (CIs) geordnet und
+risikoarm in Produktion zu bringen.
+
+.Inhalt
+* Release Policy, d. h. welche Arten von Releases gibt es und wie lautet dafür das Versionierungsschema
+* Release- und Change-Management-Prozess: Wie lebt das Team diesen Prozess konkret?
+
+.Format
+Tabellen für die Schritte des Release Management
+Optional auch grafische Darstellungen
+
+.Quelle
+* https://db-systel.symbioweb.com/systel/ProcLib/go/39b0y9wa9at4z9qd7g6xz8k0k6[Hinweise zur Erstellung einer Release-Policy in Symbio] erläutert die Inhalte der Release Policy.
+* https://git.tech.rz.db.de/docs-as-code/doc-reference/-/blob/master/release-and-change-management/index.adoc[Referenzmodelle für die Umsetzung von Release- und Change-Management im Team]: Eines dieser Modelle könnt ihr entweder referenzieren, falls sie zu eurem Vorgehen passen. Oder ihr kopiert das Modell, das am nächsten zur eurer Vorgehensweise ist und passt es euren eigenen Bedürfnissen an.
+
+****
+
+== Release Policy
+
+=== Release-Typen
+
+[cols="h,1,1,1,1"]
+|===
+h| Release-Typ
+h| Major Release
+h| Minor Release
+h| Patch footnote:[siehe xref:03-concepts.adoc#section-concepts-patching[Patching-Konzept]]
+h| Emergency Release
+
+| Change-Art
+| Normal Change
+| Normal Change
+| Normal Change oder Standard Change
+| Emergency Change
+
+| Geplante Häufigkeit (pro Jahr)
+|
+|
+|
+|
+
+| Release-Strategie
+|
+|
+|
+|
+
+| Automatisierungsgrad
+|
+|
+|
+|
+
+5+| Rollen
+
+| Anforderer
+|
+|
+|
+|
+
+| Reviewer
+|
+|
+|
+|
+
+| Freigebender
+|
+|
+|
+|
+
+| Fachliche Abnahme
+|
+|
+|
+|
+
+| zu informierende Stakeholder
+|
+|
+|
+|
+
+5+| Einschränkungen
+
+| Deployment Zeitpunkt
+|
+|
+|
+|
+
+| Abhängigkeiten
+|
+|
+|
+|
+
+5+| Dokumentationsanforderungen
+
+| Release-Notes
+|
+|
+|
+|
+
+| Traceability
+|
+|
+|
+|
+|===
+
+=== Versionierungsschema
+
+Das Versionierungsschema ist Semantic Versioning V2, siehe https://semver.org/[SemVer.org].
+
+Kurzfassung:
+
+Das Schema ist
+[source,text]
+----
+MAJOR.MINOR.PATCH-PRE_RELEASE+BUILD
+----
+
+* `MAJOR` wird erhöht, wenn API-inkompatible Änderungen veröffentlicht werden,
+* `MINOR` wird erhöht, wenn neue Funktionalitäten, welche kompatibel zur bisherigen API sind, veröffentlicht werden, und
+* `PATCH` wird erhöht, wenn die Änderungen ausschließlich API-kompatible Bugfixes um-fassen.
+
+Daneben gibt es als optionale Zusätze `PRE_RELEASE` und `BUILD`.
+
+
+Es gibt eine definierte Sortierung der Versionen, die sich aus der Semantik ergibt und sich in folgendem Beispiel gut veranschaulichen lässt:
+
+* `1.2.3-beta.2`
+* `1.2.3-beta.2+20201105`
+* `1.2.3`
+* `1.2.3+20201105`
+
+Für Details die https://semver.org/[Spezifikation] beachten!
+
+== Umsetzung des Release Prozesses
+
+

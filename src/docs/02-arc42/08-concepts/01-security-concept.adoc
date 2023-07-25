@@ -1,0 +1,78 @@
+:jbake-menu: -
+:jbake-type: page
+include::../config.adoc[]
+
+[[section-concepts-security]]
+== Sicherheitskonzept
+
+[role="arc42help"]
+****
+.Motivation
+Lt. RRil 114.0240 04 & 05 sowie 114.0247 05 - 07 muss ein Sicherheitskonzept vorliegen.
+Zudem solltest du einige Sicherheitsaspekte schon in einer frühen konzeptionellen Phase berücksichtigen,
+etwa bei der Auswahl von Komponenten (Buzz-Word: Security by Design).
+Ansonsten kann es zu einem späteren Zeitpunkt sehr teuer bzw. unmöglich sein,
+die Anwendung auf das erforderliche Sicherheitsniveau zu bringen.
+
+.Inhalt
+
+* Vorgegebene Inhalte laut Rahmenrichtlinien sind hier zu beachten, siehe
+** RRil https://dbmp.intranet.deutschebahn.com/DBMP_de/start/konzernregeln/regelwerksdatenbanken/krwd_suche.html?RegelwerkNrExtern=114.0240&sprache=DE[114.0240 Sicherer IT Betrieb] 04 & 05 sowie http://dbmp.intranet.deutschebahn.com/DBMP_de/start/konzernregeln/regelwerksdatenbanken/krwd_suche.html?RegelwerkNrExtern=114.0247&sprache=DE[114.0247 Sichere Beschaffung, Instandhaltung und Entwicklung von IT] 05 - 07 und zusätzlich
+** Schutzkonzept Schadsoftware (114.0240-05-28) sowie
+** Kryptographiekonzept (114.0240-05-47, 114.0247-05-07)
+* Einen Anforderungskatalog zur Software Security findest du auf den
+https://db.de/devsec[Seiten der Application Security Specialists].
+Mit dem Filter "Requirements by Phase Architecture" kannst du die Anzahl der Anforderungen für die initiale Auswahl einschränken.
+* Eine Übersicht der betrieblichen Sicherheitsanforderungen bietet die
+https://dbsystel.wiki.intranet.deutschebahn.com/wiki/display/secops/0-%C3%9Cbersicht%20Betreibervorgaben[Übersicht Betreibervorgaben im SecOps-Wiki]
+
+.Form
+Mache die für die Anwendung relevanten Sicherheitsanforderungen explizit sichtbar, indem Du direkt auf
+https://ass.gitpages.tech.rz.db.de/vorgaben/design-guideline-application-security/02_Requirements_by/08_all.html[AppSec-Website] bzw. über Paragraphen-Nummern auf die Rahmenrichtlinien referenzierst.
+Beschreibe zu jeder relevanten Anforderungen wie du sie umsetzt.
+Dazu eignet sich etwa folgende Tabelle:
+
+|===
+h|Anforderung|Umsetzung
+
+|
+|
+|===
+
+****
+
+[.arc42help]
+****
+das Erstellen des Security-Konzepts wird einfacher!
+
+Du kannst jetzt einfach vorgefertigte Textblöcke referenzieren um das Security-Konzept zu erstellen.
+Nutze dafür IntelliJ und das Auto-verfollständigen Feature des AsciiDoc-Plugins.
+Tippe pro Modul
+
+`include::{sec-`
+
+und wähle dann under den vorgeschlagenen Gruppierungen eine aus.
+
+Tippe weiter `/` und wähle eines der vorgeschlagenen Module aus.
+
+Vervollständige den Include durch `[leveloffset=+1]`.
+
+Schau Dir den Textblock genau an, ob er beschreibt, was Ihr im Projekt umsetzt.
+Hast Du Abweichungen von dem Textblock?
+Dokumentiere diese unterhalb des Blocks.
+Abweichungen von den Controls bitte als Admonition dokumentieren.
+
+Beispiel:
+
+IMPORTANT: C3.0815 wird nicht umgesetzt
+
+Teilweise wirst Du im Textblock gelb hinterlegte Abschnitte finden, die Dir erklären, wie Du den Block um eigene Informationen anreichern musst.
+Dies funktioniert, indem Du _vor_ dem include das im Block angegebene Attribut mit Inhalt füllst.
+****
+
+//:zeitplan: Die Pentests werde jeweils bei größeren Änderungen der Applikation, mindestens aber eimal jährlich durchgeführt.
+
+//include::{sec-ass}/pentest.adoc[leveloffset=+1]
+
+//IMPORTANT: C3.0314 wird nicht umgesetzt
+

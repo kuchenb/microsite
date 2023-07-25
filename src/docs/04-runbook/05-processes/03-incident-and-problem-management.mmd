@@ -1,0 +1,63 @@
+graph TD
+  subgraph src_group[Incident Source]
+  style src_group fill:#FFF,stroke:#CCC,stroke-width:6px
+  USER[User] 
+  EVENT[Monitoring Event]
+  classDef src fill:#CCC
+  class USER,EVENT src
+  end
+  
+  subgraph L1_group[1st Level]
+  style L1_group fill:#FFF,stroke:#F99,stroke-width:6px
+
+  USER ==>|call| DESK("IT Help Desk DB Systel <br/> 
+                    fa:fa-envelope IT.Service.Desk@deutschebahn.com <br/> 
+                    fa:fa-globe https://serviceportal-call.intranet.deutschebahn.com <br/>
+                    fa:fa-ticket L1_ITSD <br/> 
+                    fa:fa-phone 91-5555 oder 0361-4308200 <br/> 
+                    fa:fa-circle 7x24")
+  EVENT ==>|forward| NETCOOL(Netcool <br/> fa:fa-ticket L2_COCKPIT <br/> fa:fa-phone 955-17340 oder 999-16170 <br/> fa:fa-circle 7x24)
+  classDef L1 fill:#F99
+  class DESK,NETCOOL L1
+
+  end
+
+  subgraph L2_group[2nd Level]
+  style L2_group fill:#FFF,stroke:#FF9,stroke-width:6px
+  
+  DESK ==>|call| OP("Op Team {{team name}} <br/> 
+                    fa:fa-envelope {{mail-in}}@deutschebahn.com <br/> 
+                    fa:fa-globe https://{{micro site}} <br/>
+                    fa:fa-ticket L2_{{ITSM-Group}} <br/> 
+                    fa:fa-phone {{tel. no.}} <br/> 
+                    fa:fa-circle office hours")
+
+  DESK ==>|call| MIRT("MIRT/OpM <br/>
+                    fa:fa-phone 9833-8675 <br/> 
+                    fa:fa-circle 7x24")
+
+  MIRT ==> OP
+  NETCOOL ==>|call| OP
+  NETCOOL ==>|call| MIRT
+
+  classDef L2 fill:#FF9
+  class OP,MIRT L2
+
+  end
+
+  subgraph L3_group[3rd Level]
+  style L3_group fill:#FFF,stroke:#CFC,stroke-width:6px
+  
+  OP ==>|call| DEV("Dev Team {{team name}} <br/> 
+                    fa:fa-envelope {{mail-in}}@deutschebahn.com <br/> 
+                    fa:fa-globe https://{{micro site}} <br/>
+                    fa:fa-phone {{tel. no.}} <br/> 
+                    fa:fa-circle office hours")
+
+  OP ==>|incident| AWS("AWS <br/>
+                    fa:fa-globe http://db.de/aws <br/>
+                    fa:fa-circle 7x24")
+
+  classDef L3 fill:#CFC
+  class DEV,AWS L3
+  end
